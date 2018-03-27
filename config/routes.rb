@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
 
-  get "students/:id/activate", to: "students#activate", as: 'activate_student'
+
   resources :students, only: [:index,:show]
+  get "students/:id/activate", to: "students#activate", as: 'activate_student'
   # patch '/students/:id/activate', to: 'students#show', as: 'activate'
 
 
