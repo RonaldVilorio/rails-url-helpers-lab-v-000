@@ -16,8 +16,7 @@ class StudentsController < ApplicationController
       @student.active = true
     end
     @student.save
-    render students_path(@student)
-
+    
   end
 
   private
