@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
   # get "students/:id", to: "students#show"
 
-  patch "/activate/:id/activate", to: "students#activate", as: 'activate'
+  # patch "/activate/:id/activate", to: "students#activate", as: 'activate'
 
 
 
