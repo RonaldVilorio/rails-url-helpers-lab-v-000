@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
-  
+  put '/students/:id/activate', to: 'students#activate', as: 'activate'
   resources :students, only: [:index,:show]
 
-  put '/students/:id/activate', to: 'students#activate', as: 'activate'
+
 
 
   # This show route can be refactored into the above resources method call, like so:
