@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  put '/students/:id/activate', to: 'students#activate', as: 'activate'
+  get '/students/:id/activate', to: 'students#activate', as: 'activate'
   resources :students, only: [:index,:show]
 
 
