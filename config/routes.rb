@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   # resources :students, only: :edit, as: :activate
-  resources :students, only: :activate, as: :activate, path: :activate, controller: :activate
+  resources :students, only: :activate, as: :activate
   resources :students, only: [:index,:show]
 
 
