@@ -13,10 +13,10 @@ class StudentsController < ApplicationController
     if @student.active == true
       @student.active = false
     elsif @student.active == false
-      @student.active == true
+      @student.active = true
     end
     @student.save
-    
+
   end
 
   private
