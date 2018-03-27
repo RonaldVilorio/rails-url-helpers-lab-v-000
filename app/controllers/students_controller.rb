@@ -16,8 +16,7 @@ class StudentsController < ApplicationController
       @student.active = true
     end
     @student.save
-    link_to @student.to_s, student_path(@student)
-
+    
   end
 
   private
