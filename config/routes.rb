@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :students, only: :edit, as: :activate
   resources :students, only: [:index,:show]
 
-  get '/activate'
+  get '/activate', to: 'students#activate'
 
 
   # This show route can be refactored into the above resources method call, like so:
