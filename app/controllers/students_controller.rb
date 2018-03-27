@@ -9,7 +9,6 @@ class StudentsController < ApplicationController
     @student = Student.find(params[:id])
   end
   def activate
-    binding.pry
     @student = Student.find(params[:id])
   end
 
