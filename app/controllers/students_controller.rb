@@ -16,8 +16,8 @@ class StudentsController < ApplicationController
     @student.save
   end
   def activate
-    
-    
+
+
   end
 
   private
